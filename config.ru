@@ -1,4 +1,4 @@
 $:.unshift(File.expand_path(File.join(File.dirname(__FILE__), "lib")))
-require "rails/assets"
+require "rails/assets/server"
 
-run Rails::Assets
+run Rails::Assets::Server
