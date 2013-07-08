@@ -25,7 +25,7 @@ module Bower
     def initialize(package)
       name = package.strip
 
-      raise Bower::BuildError.new("Empty package name") if name.split("#").first == ""
+      raise Bower::BuildError.new("Empty package name") if name.split("#").first.nil?
 
       @bower_name = name
     end
